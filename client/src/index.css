@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/* Little Stars design tokens: soft pastels, playful but readable      */
+/* ------------------------------------------------------------------ */
+@theme {
+  --font-display: "Baloo 2", "Trebuchet MS", cursive, sans-serif;
+  --font-body: "Nunito", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --color-brand-sky: #38bdf8;
+  --color-brand-sky-soft: #bae6fd;
+  --color-brand-sun: #fbbf24;
+  --color-brand-sun-soft: #fde68a;
+  --color-brand-coral: #fb7185;
+  --color-brand-coral-soft: #fecdd3;
+  --color-brand-mint: #34d399;
+  --color-brand-mint-soft: #a7f3d0;
+  --color-brand-lavender: #a78bfa;
+  --color-brand-lavender-soft: #ddd6fe;
+  --color-brand-ink: #1e293b;
+  --color-brand-cream: #fffbeb;
+
+  --animate-wiggle: wiggle 2.5s ease-in-out infinite;
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-pop-in: pop-in 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-brand-ink);
+  background-color: #f8fafc;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+/* Accessible focus ring on all interactive elements */
+:focus-visible {
+  outline: 3px solid var(--color-brand-sky);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skip-to-content link (keyboard users) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-brand-ink);
+  color: white;
+  border-radius: 0 0 0.75rem 0;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/* Subtle scrollbar styling for lightboxes/panels */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-brand-sky-soft) transparent;
+}

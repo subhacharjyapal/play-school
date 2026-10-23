@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Baby Learning Pre-school · Sign In</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧸</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { cream:'#FAF6F0', terra:'#E07A5F', sun:'#F4D06F', sage:'#81B29A', sky:'#90CAF9', ink:'#4A3F35' },
+      fontFamily: { display:['Fredoka','sans-serif'], body:['Quicksand','sans-serif'] }
+    } }
+  };
+</script>
+<link rel="stylesheet" href="styles.css" />
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body class="font-body">
+
+<!-- ==== dreamy backdrop ==== -->
+<div aria-hidden="true">
+  <svg class="sun" viewBox="0 0 120 120">
+    <g class="ray">
+      <g fill="#F4D06F">
+        <circle cx="60" cy="12" r="6"/><circle cx="60" cy="108" r="6"/>
+        <circle cx="12" cy="60" r="6"/><circle cx="108" cy="60" r="6"/>
+        <circle cx="26" cy="26" r="5"/><circle cx="94" cy="26" r="5"/>
+        <circle cx="26" cy="94" r="5"/><circle cx="94" cy="94" r="5"/>
+      </g>
+    </g>
+    <circle cx="60" cy="60" r="34" fill="#F4D06F"/>
+    <circle cx="60" cy="60" r="28" fill="#FBE08F"/>
+    <circle cx="50" cy="56" r="3.4" fill="#8A6A3B"/>
+    <circle cx="70" cy="56" r="3.4" fill="#8A6A3B"/>
+    <path d="M50 68q10 9 20 0" stroke="#8A6A3B" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="43" cy="65" r="4" fill="#E07A5F" opacity=".4"/>
+    <circle cx="77" cy="65" r="4" fill="#E07A5F" opacity=".4"/>
+  </svg>
+  <div class="cloud" style="top:9%;left:6%;width:150px;animation:bob 8s ease-in-out infinite">
+    <svg viewBox="0 0 200 90"><g fill="#fff"><ellipse cx="60" cy="58" rx="44" ry="26"/><ellipse cx="105" cy="46" rx="38" ry="30"/><ellipse cx="148" cy="60" rx="36" ry="22"/><rect x="52" y="58" width="106" height="24" rx="12"/></g></svg>
+  </div>
+  <div class="cloud" style="top:22%;left:70%;width:120px;animation:bob 10s ease-in-out infinite;animation-delay:1.5s">
+    <svg viewBox="0 0 200 90"><g fill="#fff"><ellipse cx="60" cy="58" rx="44" ry="26"/><ellipse cx="105" cy="46" rx="38" ry="30"/><ellipse cx="148" cy="60" rx="36" ry="22"/><rect x="52" y="58" width="106" height="24" rx="12"/></g></svg>
+  </div>
+  <div class="cloud" style="top:58%;left:2%;width:96px;animation:bob 9s ease-in-out infinite;animation-delay:.8s;opacity:.75">
+    <svg viewBox="0 0 200 90"><g fill="#fff"><ellipse cx="60" cy="58" rx="44" ry="26"/><ellipse cx="105" cy="46" rx="38" ry="30"/><ellipse cx="148" cy="60" rx="36" ry="22"/><rect x="52" y="58" width="106" height="24" rx="12"/></g></svg>
+  </div>
+  <svg class="plane p1" viewBox="0 0 64 64"><path d="M4 30 L60 8 L44 58 L32 40 Z" fill="#fff" stroke="#90CAF9" stroke-width="2" stroke-linejoin="round"/><path d="M32 40 L60 8 L24 46 Z" fill="#CFE7FB"/></svg>
+  <svg class="plane p2" viewBox="0 0 64 64"><path d="M4 30 L60 8 L44 58 L32 40 Z" fill="#fff" stroke="#90CAF9" stroke-width="2" stroke-linejoin="round"/><path d="M32 40 L60 8 L24 46 Z" fill="#CFE7FB"/></svg>
+  <svg class="star" style="top:14%;left:30%;width:20px" viewBox="0 0 24 24"><path fill="#F4D06F" d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>
+  <svg class="star" style="top:40%;left:88%;width:16px;animation-delay:1s" viewBox="0 0 24 24"><path fill="#F4D06F" d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>
+  <svg class="star" style="top:70%;left:78%;width:14px;animation-delay:2s" viewBox="0 0 24 24"><path fill="#E07A5F" d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>
+  <svg class="star" style="top:80%;left:44%;width:18px;animation-delay:.6s" viewBox="0 0 24 24"><path fill="#81B29A" d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>
+  <div class="block b1">A</div>
+  <div class="block b2">B</div>
+  <div class="block b3">C</div>
+  <svg class="hills" viewBox="0 0 1440 260" preserveAspectRatio="none">
+    <path fill="#81B29A" opacity=".35" d="M0,150 Q240,80 480,140 T960,130 T1440,150 V260 H0 Z"/>
+    <path fill="#81B29A" opacity=".6" d="M0,200 Q300,140 620,190 T1240,185 T1440,205 V260 H0 Z"/>
+  </svg>
+</div>
+<main class="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-10 gap-6">
+
+  <!-- ==== header ==== -->
+  <header class="flex flex-col items-center text-center gap-2">
+    <div class="flex items-center gap-3 flex-wrap justify-center">
+      <div class="w-12 h-12 rounded-2xl bg-white/80 border-2 border-white shadow-[0_10px_20px_-10px_rgba(74,63,53,.4)] grid place-items-center -rotate-6">
+        <svg viewBox="0 0 32 32" class="w-8 h-8"><path d="M4 24a12 12 0 0 1 24 0" fill="none" stroke="#E07A5F" stroke-width="4" stroke-linecap="round"/><path d="M9 24a7 7 0 0 1 14 0" fill="none" stroke="#F4D06F" stroke-width="4" stroke-linecap="round"/><path d="M14 24a2 2 0 0 1 4 0" fill="none" stroke="#81B29A" stroke-width="4" stroke-linecap="round"/></svg>
+      </div>
+      <h1 class="font-display font-semibold text-3xl sm:text-4xl text-ink leading-tight">
+        Baby Learning <span class="text-terra">Pre-school</span>
+      </h1>
+      <!-- mascot -->
+      <button id="mascot" class="mascot relative w-16 h-16 rounded-full bg-white/80 border-2 border-white shadow-[0_10px_20px_-10px_rgba(74,63,53,.4)] grid place-items-center hover:scale-110 transition-transform" aria-describedby="tip">
+        <svg viewBox="0 0 100 100" class="w-14 h-14">
+          <circle cx="32" cy="40" r="9" fill="#B98A5E"/><circle cx="68" cy="40" r="9" fill="#B98A5E"/>
+          <circle cx="32" cy="40" r="4.5" fill="#EBC9A4"/><circle cx="68" cy="40" r="4.5" fill="#EBC9A4"/>
+          <circle cx="50" cy="52" r="22" fill="#C08E60"/>
+          <ellipse cx="50" cy="60" rx="11" ry="8" fill="#F4E2CB"/>
+          <ellipse cx="50" cy="56" rx="3" ry="2.3" fill="#4A3F35"/>
+          <path d="M50 58.5v2.5" stroke="#4A3F35" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M46 63q4 3.4 8 0" stroke="#4A3F35" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <g class="wink"><circle cx="42" cy="48" r="2.6" fill="#4A3F35"/><circle cx="41.2" cy="47.2" r=".9" fill="#fff"/></g>
+          <circle cx="58" cy="48" r="2.6" fill="#4A3F35"/><circle cx="57.2" cy="47.2" r=".9" fill="#fff"/>
+          <g class="wave"><ellipse cx="78" cy="52" rx="5" ry="8" fill="#C08E60" transform="rotate(24 78 52)"/></g>
+          <path d="M50 22 L72 30 L50 38 L28 30 Z" fill="#3F4A59"/>
+          <path d="M38 34v6q12 5 24 0v-6" fill="#4A5568"/>
+          <path d="M72 30v10" stroke="#F4D06F" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="72" cy="42" r="2.8" fill="#F4D06F"/>
+        </svg>
+        <span id="tip" class="tip" role="tooltip">Welcome, Little Explorer! ✨</span>
+      </button>
+    </div>
+    <p class="font-display text-sm text-ink/60 font-medium">Where tiny steps become big adventures</p>
+  </header>
+  <!-- ==== login card ==== -->
+  <section id="card" class="card">
+    <svg class="sticker s1" viewBox="0 0 48 48" width="52" height="52" aria-hidden="true"><path d="M24 4l5 12 13 1-10 8.5L34 38l-10-6.5L14 38l2-12.5L6 17l13-1z" fill="#F4D06F" stroke="#E0A93B" stroke-width="2" stroke-linejoin="round"/></svg>
+    <svg class="sticker s2" viewBox="0 0 48 48" width="46" height="46" aria-hidden="true"><circle cx="24" cy="24" r="18" fill="#90CAF9"/><circle cx="18" cy="21" r="2.6" fill="#3F4A59"/><circle cx="30" cy="21" r="2.6" fill="#3F4A59"/><path d="M17 29q7 6 14 0" stroke="#3F4A59" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg>
+
+    <h2 class="title text-center">Sign In to Your<br class="hidden sm:block" /> Learning Diary</h2>
+    <p class="subtitle text-center">Ready for another fun-filled day?</p>
+
+    <!-- avatars -->
+    <p class="label" id="charLabel">Choose Your Character:</p>
+    <div class="avatars" role="radiogroup" aria-labelledby="charLabel">
+      <button type="button" class="avatar" role="radio" aria-checked="true" data-name="Teddy">
+        <svg viewBox="0 0 64 64"><circle cx="17" cy="17" r="9.5" fill="#B98A5E"/><circle cx="47" cy="17" r="9.5" fill="#B98A5E"/><circle cx="17" cy="17" r="4.6" fill="#EBC9A4"/><circle cx="47" cy="17" r="4.6" fill="#EBC9A4"/><circle cx="32" cy="34" r="20" fill="#C08E60"/><ellipse cx="32" cy="40" rx="11.5" ry="9" fill="#F4E2CB"/><ellipse cx="32" cy="35.5" rx="3.4" ry="2.6" fill="#4A3F35"/><path d="M32 38.4v2.6" stroke="#4A3F35" stroke-width="1.7" stroke-linecap="round"/><path d="M28 42.4c2.4 2.6 5.6 2.6 8 0" stroke="#4A3F35" stroke-width="1.7" fill="none" stroke-linecap="round"/><circle cx="23.5" cy="30" r="2.4" fill="#4A3F35"/><circle cx="40.5" cy="30" r="2.4" fill="#4A3F35"/><circle cx="22.8" cy="29.2" r=".8" fill="#fff"/><circle cx="39.8" cy="29.2" r=".8" fill="#fff"/><ellipse cx="20" cy="37" rx="3.2" ry="2.2" fill="#E07A5F" opacity=".35"/><ellipse cx="44" cy="37" rx="3.2" ry="2.2" fill="#E07A5F" opacity=".35"/></svg>
+        Teddy
+      </button>
+      <button type="button" class="avatar" role="radio" aria-checked="false" data-name="Cosmo">
+        <svg viewBox="0 0 64 64"><path d="M16 18 L14 6 L26 12 Z" fill="#A9A3C9"/><path d="M48 18 L50 6 L38 12 Z" fill="#A9A3C9"/><path d="M18.5 16 L17.5 10 L23 13 Z" fill="#E8C7E4"/><path d="M45.5 16 L46.5 10 L41 13 Z" fill="#E8C7E4"/><path d="M14 56c2-8 9-12 18-12s16 4 18 12" fill="#8FB8DE"/><circle cx="32" cy="32" r="17" fill="#A9A3C9"/><ellipse cx="32" cy="38" rx="8.5" ry="6.5" fill="#F3EEF9"/><path d="M29.5 35.5h5l-2.5 2.6z" fill="#E89BB8"/><circle cx="25" cy="30" r="2.3" fill="#3F3A52"/><circle cx="39" cy="30" r="2.3" fill="#3F3A52"/><path d="M19 34h-5M19 36.5l-5 1M45 34h5M45 36.5l5 1" stroke="#8B84AD" stroke-width="1.2" stroke-linecap="round"/><circle cx="32" cy="30" r="23" fill="none" stroke="#90CAF9" stroke-width="2.6"/><path d="M19 19a17 17 0 0 1 9-8" stroke="#fff" stroke-width="3" opacity=".85" fill="none" stroke-linecap="round"/><path d="M50 15l1 2.6 2.6 1-2.6 1-1 2.6-1-2.6-2.6-1 2.6-1z" fill="#F4D06F"/></svg>
+        Cosmo
+      </button>
+      <button type="button" class="avatar" role="radio" aria-checked="false" data-name="Bunny">
+        <svg viewBox="0 0 64 64"><g transform="rotate(-8 24 16)"><ellipse cx="24" cy="16" rx="5.5" ry="13" fill="#F6EFE7"/><ellipse cx="24" cy="17" rx="2.8" ry="9.5" fill="#F3B8C6"/></g><g transform="rotate(8 40 16)"><ellipse cx="40" cy="16" rx="5.5" ry="13" fill="#F6EFE7"/><ellipse cx="40" cy="17" rx="2.8" ry="9.5" fill="#F3B8C6"/></g><circle cx="32" cy="40" r="19" fill="#F6EFE7"/><circle cx="25" cy="38" r="2.4" fill="#4A3F35"/><circle cx="39" cy="38" r="2.4" fill="#4A3F35"/><circle cx="24.2" cy="37.2" r=".85" fill="#fff"/><circle cx="38.2" cy="37.2" r=".85" fill="#fff"/><path d="M32 42.5l-2.4 2.2h4.8z" fill="#E89BB8"/><path d="M32 45v2.4M28 48.6q4 3 8 0" stroke="#4A3F35" stroke-width="1.6" fill="none" stroke-linecap="round"/><ellipse cx="19" cy="44" rx="3.4" ry="2.3" fill="#F3B8C6" opacity=".7"/><ellipse cx="45" cy="44" rx="3.4" ry="2.3" fill="#F3B8C6" opacity=".7"/></svg>
+        Bunny
+      </button>
+      <button type="button" class="avatar" role="radio" aria-checked="false" data-name="Foxy">
+        <svg viewBox="0 0 64 64"><path d="M13 22 L14 5 L28 13 Z" fill="#ED8B4E"/><path d="M51 22 L50 5 L36 13 Z" fill="#ED8B4E"/><path d="M16 12 L16.6 8 L22 12 Z" fill="#7A4A32"/><path d="M48 12 L47.4 8 L42 12 Z" fill="#7A4A32"/><circle cx="32" cy="36" r="20" fill="#ED8B4E"/><path d="M32 32c-9 0-14 5.5-14 11.5 0 5.5 6.5 9 14 9s14-3.5 14-9C46 37.5 41 32 32 32z" fill="#FDF3E7"/><circle cx="24" cy="31" r="2.5" fill="#4A3F35"/><circle cx="40" cy="31" r="2.5" fill="#4A3F35"/><circle cx="23.2" cy="30.2" r=".85" fill="#fff"/><circle cx="39.2" cy="30.2" r=".85" fill="#fff"/><ellipse cx="32" cy="41" rx="3.4" ry="2.6" fill="#4A3F35"/><path d="M32 44v2.6M27.5 48.6q4.5 3 9 0" stroke="#4A3F35" stroke-width="1.7" fill="none" stroke-linecap="round"/><ellipse cx="17" cy="38" rx="3.4" ry="2.3" fill="#E07A5F" opacity=".4"/><ellipse cx="47" cy="38" rx="3.4" ry="2.3" fill="#E07A5F" opacity=".4"/></svg>
+        Foxy
+      </button>
+    </div>
+    <form id="form" novalidate>
+      <div class="field">
+        <label class="label" for="user">Your Name or Grown-up's Email</label>
+        <div class="pill">
+          <i data-lucide="key-round" class="ic" width="20" height="20"></i>
+          <input id="user" name="user" type="text" autocomplete="username" inputmode="email" placeholder="Enter your nickname or parent email" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="password">Secret Password</label>
+        <div class="pill" style="padding-right:104px">
+          <i data-lucide="lock-keyhole" class="ic" width="20" height="20"></i>
+          <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Shhh... type it here" />
+          <button type="button" id="eyeBtn" class="eye" aria-label="Show password"><i data-lucide="eye" width="20" height="20"></i></button>
+        </div>
+        <!-- peek-a-boo friend -->
+        <div id="pip" class="pip" aria-hidden="true">
+          <svg viewBox="0 0 64 74">
+            <circle cx="18" cy="18" r="8" fill="#B9C7D6"/><circle cx="46" cy="18" r="8" fill="#B9C7D6"/>
+            <circle cx="18" cy="18" r="4" fill="#F0C9C9"/><circle cx="46" cy="18" r="4" fill="#F0C9C9"/>
+            <circle cx="32" cy="34" r="20" fill="#C7D3E0"/>
+            <ellipse cx="32" cy="42" rx="9" ry="6.5" fill="#F4F7FA"/>
+            <ellipse cx="32" cy="38" rx="2.6" ry="2" fill="#4A3F35"/>
+            <path d="M32 40v2M28 44q4 3 8 0" stroke="#4A3F35" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <g><circle cx="24" cy="30" r="2.6" fill="#3B3229"/><circle cx="40" cy="30" r="2.6" fill="#3B3229"/><circle cx="23.2" cy="29.2" r=".85" fill="#fff"/><circle cx="39.2" cy="29.2" r=".85" fill="#fff"/></g>
+            <g class="paws">
+              <ellipse cx="24" cy="60" rx="8" ry="6.5" fill="#A9BACC"/>
+              <ellipse cx="40" cy="60" rx="8" ry="6.5" fill="#A9BACC"/>
+              <path d="M20 56.5v-3M24 55.5v-3.4M28 56.5v-3M36 56.5v-3M40 55.5v-3.4M44 56.5v-3" stroke="#8FA3B8" stroke-width="1.4" stroke-linecap="round"/>
+            </g>
+            <g class="peep"><text x="32" y="66" text-anchor="middle" font-size="10" font-family="Fredoka, sans-serif" fill="#5A6A7A">no peeking!</text></g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="links">
+        <a class="link" href="#forgot">Forgot Password?</a>
+        <a class="link b" href="#enroll">New Student? Enroll Here</a>
+      </div>
+
+      <button type="submit" id="cta" class="cta">
+        <span class="inline-flex items-center gap-2 justify-center">
+          <i data-lucide="sparkles" width="20" height="20"></i>
+          Let's Begin the Adventure!
+        </span>
+      </button>
+    </form>
+
+    <p class="text-center text-[12.5px] text-ink/50 font-semibold mt-5">
+      Tip: ask a grown-up to help you sign in 🌈
+    </p>
+  </section>
+
+  <footer class="text-center text-[12.5px] text-ink/45 font-semibold relative z-10">
+    Made with 💛 for our little explorers · © Baby Learning Pre-school
+  </footer>
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
